@@ -1,0 +1,114 @@
+{
+  "project_name": "Spectra - Student Performance Prediction Platform",
+  "theme_mode": "dark",
+  "archetype": "Hybrid: Archetype 4 (Swiss & High-Contrast) + Archetype 5 (Jewel & Luxury)",
+  "design_philosophy": "A high-end, academic analytics tool. Combines the precision of a technical command center with the premium, deep aesthetic of a modern university research lab. Avoids generic SaaS looks by using deep obsidian backgrounds, pure white text, and rich sapphire/cyan accents.",
+  "colors": {
+    "background": {
+      "default": "#050A15",
+      "surface": "#0A1128",
+      "surface_elevated": "#111B3D"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#94A3B8",
+      "muted": "#64748B",
+      "inverse": "#050A15"
+    },
+    "brand": {
+      "primary": "#2563EB",
+      "primary_hover": "#3B82F6",
+      "accent": "#06B6D4",
+      "purple_glow": "#7C3AED"
+    },
+    "status": {
+      "excellent": "#10B981",
+      "average": "#F59E0B",
+      "needs_improvement": "#EF4444"
+    },
+    "gradients": {
+      "hero_overlay": "bg-gradient-to-r from-[#050A15] via-[#050A15]/80 to-transparent",
+      "theme_requested": "bg-gradient-to-br from-[#0A1128] via-[#1E1B4B] to-[#050A15]",
+      "accent_text": "bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] text-transparent bg-clip-text"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "headings": "Cabinet Grotesk, sans-serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-5xl lg:text-6xl font-black tracking-tighter leading-none",
+      "h2": "text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl lg:text-2xl font-semibold tracking-tight",
+      "h4": "text-lg font-medium",
+      "body": "text-base text-slate-300 leading-relaxed",
+      "small": "text-sm text-slate-400",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-cyan-400"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing Philosophy. Use 2-3x more padding than standard apps. p-8 or p-12 for main containers.",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "bento_spans": {
+      "main_chart": "col-span-1 md:col-span-2 lg:col-span-3",
+      "summary_card": "col-span-1",
+      "side_list": "col-span-1 row-span-2"
+    }
+  },
+  "components_strategy": {
+    "forms_and_inputs": {
+      "library": "Shadcn UI",
+      "styling": "Dark backgrounds (bg-[#0A1128]), sharp 1px borders (border-slate-800), focus:ring-1 focus:ring-cyan-500. No heavy shadows."
+    },
+    "buttons": {
+      "primary": "bg-blue-600 hover:bg-blue-500 text-white font-medium px-8 py-3 rounded-md transition-all",
+      "secondary": "bg-transparent border border-slate-700 hover:border-slate-500 text-white px-8 py-3 rounded-md transition-all"
+    },
+    "cards": {
+      "dashboard_widget": "bg-[#0A1128]/80 backdrop-blur-md border border-slate-800 rounded-lg p-6 shadow-[0_8px_32px_rgba(0,0,0,0.12)]",
+      "prediction_result": "bg-gradient-to-b from-[#111B3D] to-[#0A1128] border border-blue-900/50 rounded-xl p-8 relative overflow-hidden"
+    },
+    "charts": {
+      "library": "Shadcn Charts (Recharts under the hood)",
+      "styling": "Use brand accents (Cyan, Blue, Purple) against dark backgrounds. Ensure axis text is slate-400."
+    }
+  },
+  "motion_and_interactions": {
+    "hover_states": "All interactive elements must have clear hover states. Cards slightly lift (-translate-y-1) and border lightens.",
+    "page_transitions": "Framer Motion: Fade in and slide up slightly for page content.",
+    "staggered_lists": "Dashboard items must load with a staggered entrance animation."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/af2f1ccc-d4e9-4206-bba2-03c96cabc863/images/6843396fc5852169f9b6974104434a8e9e853d1115064c60e5636d0e43ae55b3.png",
+      "description": "Abstract 3D glass spheres and glowing interconnected nodes floating over a deep sapphire blue background.",
+      "usage": "Use as a full-screen background image in the Home hero section. MUST use an overlay like `bg-black/60` or `bg-gradient-to-r from-[#050A15] via-[#050A15]/80 to-transparent` to ensure text readability."
+    },
+    "dashboard_texture": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/af2f1ccc-d4e9-4206-bba2-03c96cabc863/images/d8b6b1f8fb9354f73f1ef9abb18536b281008c6e7987bc0a8b55ee63e44ad8bc.png",
+      "description": "Deep oceanic blue radial gradient background with subtle digital noise texture.",
+      "usage": "Use as the fixed background for the entire application or specifically the dashboard to give it a premium, textured feel."
+    },
+    "student_studying": {
+      "url": "https://images.unsplash.com/photo-1713006615995-acc452dde2e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHx1bml2ZXJzaXR5JTIwc3R1ZGVudCUyMHN0dWR5aW5nJTIwbmlnaHR8ZW58MHx8fHwxNzc2MDcxOTIyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Man sitting at a desk working on a laptop computer at night.",
+      "usage": "Can be used in the 'About' or 'How it Works' section. Wrap in a container with a subtle blue tint overlay to match the theme."
+    },
+    "abstract_data": {
+      "url": "https://images.pexels.com/photos/17485657/pexels-photo-17485657.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "3D render abstract digital visualization depicting neural networks and AI.",
+      "usage": "Use alongside the prediction form or in a side column to reinforce the Machine Learning aspect."
+    }
+  },
+  "instructions_to_main_agent": {
+    "tech_stack": "React.js, Tailwind CSS, Shadcn UI, Framer Motion, Python (FastAPI), Scikit-learn, MongoDB.",
+    "ml_requirements": "Generate a clean synthetic dataset for student performance. Build a pipeline for data preprocessing, model selection (evaluate Linear Regression, Random Forest, Decision Tree, Gradient Boosting), and deploy the best model. Expose an endpoint via FastAPI.",
+    "frontend_structure": "Create a hybrid full-stack structure. Implement a responsive Navbar. Include Pages: Home, Prediction Form, Dashboard. Implement Shadcn inputs for the 9 specified form fields.",
+    "dashboard_requirements": "Store predictions in MongoDB. Create a dashboard that visualizes prediction history using Shadcn charts (e.g., trend of predicted scores, pie chart of performance categories).",
+    "accessibility_and_testing": "Include `data-testid` on all interactive elements (e.g., `data-testid=\"predict-submit-button\"`, `data-testid=\"prediction-score\"`). Ensure hover contrast rules are met.",
+    "icons": "Install and use `lucide-react` for standard UI icons, or `@phosphor-icons/react` for high-end analytics iconography."
+  }
+}
